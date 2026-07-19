@@ -1,0 +1,305 @@
+{
+  "name": "Snazzy",
+  "author": "gyndav",
+  "original_author": "Sindre Sorhus",
+  "description": "Elegant Sublime Text color scheme with bright colors, based on Sindre Sorhus' iTerm2 Snazzy theme",
+  "homepage": "https://github.com/gyndav/sublime-snazzy",
+  "license": "MIT",
+  "semantic_class": "snazzy",
+  "variables": {
+    // Base colors
+    "background": "#282a36",
+    "foreground": "#eff0eb",
+    "cursor": "#e9e9e9",
+    "selection": "#9370db",
+    "line_highlight": "#44475a",
+    "caret": "#e9e9e9",
+    
+    // ANSI colors from iTerm2 Snazzy theme
+    "ansi_black": "#000000",
+    "ansi_red": "#ff5c57",
+    "ansi_green": "#5af78e",
+    "ansi_yellow": "#f3f99d",
+    "ansi_blue": "#57c7ff",
+    "ansi_magenta": "#ff6ac1",
+    "ansi_cyan": "#9aedfe",
+    "ansi_white": "#f1f1f0",
+    
+    "bright_black": "#686868",
+    "bright_red": "#ff5c57",
+    "bright_green": "#5af78e",
+    "bright_yellow": "#f3f99d",
+    "bright_blue": "#57c7ff",
+    "bright_magenta": "#ff6ac1",
+    "bright_cyan": "#9aedfe",
+    "bright_white": "#f4f4f4",
+    
+    // UI colors
+    "bold_color": "#f5f5f5",
+    "cursor_guide": "#702082",
+    "selected_text": "#000000",
+    "badge_color": "#ff2600",
+    "link_color": "#4949ff",
+    
+    // Syntax highlighting colors
+    "comment": "#6272a4",
+    "string": "#f3f99d",
+    "number": "#ff6ac1",
+    "keyword": "#ff6ac1",
+    "function": "#9aedfe",
+    "class": "#57c7ff",
+    "type": "#57c7ff",
+    "variable": "#eff0eb",
+    "constant": "#f1fa8c",
+    "invalid": "#ff5c57",
+    "operator": "#eff0eb",
+    "punctuation": "#eff0eb"
+  },
+  "globals": {
+    "background": "var(background)",
+    "foreground": "var(foreground)",
+    "caret": "var(cursor)",
+    "selection": "var(selection)",
+    "selection_foreground": "var(selected_text)",
+    "line_highlight": "var(line_highlight)",
+    "gutter": "var(background)",
+    "gutter_foreground": "#6272a4",
+    "bracket_highlight": "#57c7ff",
+    "bracket_highlight_foreground": "#ffffff",
+    "bracket_contents_highlight": "#57c7ff33",
+    "bracket_contents_highlight_foreground": "#ffffff",
+    "tags": "#ff6ac1",
+    "guide": "var(cursor_guide)",
+    "active_guide": "#702082",
+    "stack_guide": "#70208255",
+    "indent_guide": "#44475a",
+    "shadow": "#00000000",
+    "header": "#282a36",
+    "header_foreground": "#eff0eb",
+    "inactive_selection": "#9370db55",
+    "selection_border": "#9370db",
+    "find_highlight": "#ff6ac155",
+    "find_highlight_foreground": "#ffffff",
+    "highlight": "#57c7ff33",
+    "highlight_foreground": "#ffffff",
+    "misspelling": "#ff5c57",
+    "block_caret": "#e9e9e9",
+    "phrase": "#f3f99d"
+  },
+  "rules": [
+    // Comments
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "foreground": "var(comment)",
+      "font_style": "italic"
+    },
+    
+    // Strings
+    {
+      "name": "String",
+      "scope": ["string", "punctuation.definition.string"],
+      "foreground": "var(string)"
+    },
+    
+    // Numbers
+    {
+      "name": "Number",
+      "scope": ["constant.numeric"],
+      "foreground": "var(number)"
+    },
+    
+    // Keywords
+    {
+      "name": "Keyword",
+      "scope": ["keyword"],
+      "foreground": "var(keyword)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Keyword.Operator",
+      "scope": ["keyword.operator"],
+      "foreground": "var(operator)"
+    },
+    
+    // Functions
+    {
+      "name": "Function",
+      "scope": ["entity.name.function", "meta.function-call", "support.function"],
+      "foreground": "var(function)"
+    },
+    
+    // Classes and Types
+    {
+      "name": "Class",
+      "scope": ["entity.name.class", "entity.name.type.class"],
+      "foreground": "var(class)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Type",
+      "scope": ["entity.name.type", "support.type", "support.class"],
+      "foreground": "var(type)"
+    },
+    
+    // Variables
+    {
+      "name": "Variable",
+      "scope": ["variable", "meta.parameter"],
+      "foreground": "var(variable)"
+    },
+    {
+      "name": "Variable.Function",
+      "scope": ["variable.function"],
+      "foreground": "var(function)"
+    },
+    
+    // Constants
+    {
+      "name": "Constant",
+      "scope": ["constant", "constant.other"],
+      "foreground": "var(constant)"
+    },
+    
+    // Invalid
+    {
+      "name": "Invalid",
+      "scope": ["invalid"],
+      "foreground": "var(invalid)",
+      "background": "#ff5c5733"
+    },
+    
+    // Punctuation
+    {
+      "name": "Punctuation",
+      "scope": ["punctuation"],
+      "foreground": "var(punctuation)"
+    },
+    
+    // Operators
+    {
+      "name": "Operator",
+      "scope": ["keyword.operator", "operator"],
+      "foreground": "var(operator)"
+    },
+    
+    // HTML/XML Tags
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag"],
+      "foreground": "var(ansi_red)"
+    },
+    {
+      "name": "Tag Attribute",
+      "scope": ["entity.other.attribute-name"],
+      "foreground": "var(ansi_yellow)"
+    },
+    
+    // CSS
+    {
+      "name": "CSS Property",
+      "scope": ["support.type.property-name.css"],
+      "foreground": "var(ansi_cyan)"
+    },
+    {
+      "name": "CSS Value",
+      "scope": ["meta.property-value.css"],
+      "foreground": "var(ansi_yellow)"
+    },
+    
+    // JSON
+    {
+      "name": "JSON Key",
+      "scope": ["support.type.property-name.json"],
+      "foreground": "var(ansi_cyan)"
+    },
+    
+    // Markdown
+    {
+      "name": "Markdown Heading",
+      "scope": ["markup.heading"],
+      "foreground": "var(ansi_blue)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Markdown Link",
+      "scope": ["markup.underline.link"],
+      "foreground": "var(link_color)"
+    },
+    {
+      "name": "Markdown Code",
+      "scope": ["markup.raw.inline"],
+      "foreground": "var(string)"
+    },
+    
+    // Git diff
+    {
+      "name": "Git Diff Added",
+      "scope": ["meta.diff.header.git", "markup.inserted.diff"],
+      "foreground": "var(ansi_green)"
+    },
+    {
+      "name": "Git Diff Removed",
+      "scope": ["markup.deleted.diff"],
+      "foreground": "var(ansi_red)"
+    },
+    {
+      "name": "Git Diff Modified",
+      "scope": ["markup.changed.diff"],
+      "foreground": "var(ansi_blue)"
+    },
+    
+    // Language Specific
+    {
+      "name": "Storage Type",
+      "scope": ["storage.type"],
+      "foreground": "var(keyword)"
+    },
+    {
+      "name": "Storage Modifier",
+      "scope": ["storage.modifier"],
+      "foreground": "var(keyword)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Support Function",
+      "scope": ["support.function"],
+      "foreground": "var(function)"
+    },
+    {
+      "name": "Support Constant",
+      "scope": ["support.constant"],
+      "foreground": "var(constant)"
+    },
+    {
+      "name": "Support Variable",
+      "scope": ["support.variable"],
+      "foreground": "var(variable)"
+    },
+    {
+      "name": "Meta Class",
+      "scope": ["meta.class"],
+      "foreground": "var(class)"
+    },
+    {
+      "name": "Meta Function",
+      "scope": ["meta.function"],
+      "foreground": "var(function)"
+    },
+    
+    // Documentation
+    {
+      "name": "Documentation",
+      "scope": ["comment.block.documentation"],
+      "foreground": "var(comment)",
+      "font_style": "italic"
+    },
+    
+    // Region folding
+    {
+      "name": "Region Marker",
+      "scope": ["meta.preprocessor", "punctuation.definition.directive"],
+      "foreground": "#6272a4"
+    }
+  ]
+}
