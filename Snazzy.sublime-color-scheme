@@ -5,7 +5,6 @@
   "description": "Elegant Sublime Text color scheme with bright colors, based on Sindre Sorhus' iTerm2 Snazzy theme",
   "homepage": "https://github.com/gyndav/sublime-snazzy",
   "license": "MIT",
-  "semantic_class": "snazzy",
   "variables": {
     "background": "#282a36",
     "foreground": "#eff0eb",
