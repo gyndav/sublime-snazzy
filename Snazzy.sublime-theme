@@ -35,7 +35,9 @@
   "settings": [
     {
       "class": "sidebar_container",
-      "content_margins": [0, 0, 0, 0]
+      "content_margins": [0, 0, 0, 0],
+      "layer0.tint": "var(background)",
+      "layer0.opacity": 1.0
     },
     {
       "class": "sidebar_tree",
@@ -46,6 +48,7 @@
       "indent_top_level": 8,
       "indent_row_spacing_close": 0,
       "indent_row_spacing_open": 0,
+      "background": "var(sidebar_background)",
       "layer0.tint": "var(sidebar_background)",
       "dark_plus_minus": true
     },
@@ -66,40 +69,47 @@
     },
     {
       "class": "sidebar_tree_row",
-      "content_margins": [0, 4, 0, 4]
+      "content_margins": [0, 4, 0, 4],
+      "background": "var(sidebar_background)"
     },
     {
       "class": "tree_row",
+      "background": "var(sidebar_background)",
       "layer0.tint": "var(sidebar_background)",
       "layer0.opacity": 1.0
     },
     {
       "class": "tree_row",
       "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+      "background": "var(sidebar_highlight)",
       "layer0.tint": "var(sidebar_highlight)",
       "layer0.opacity": 1.0
     },
     {
       "class": "tree_row",
       "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+      "background": "var(sidebar_highlight)",
       "layer0.tint": "var(sidebar_highlight)",
       "layer0.opacity": 1.0
     },
     {
       "class": "tree_row",
       "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
+      "background": "var(highlight)",
       "layer0.tint": "var(highlight)",
       "layer0.opacity": 0.3
     },
     {
       "class": "tree_row",
       "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+      "background": "var(sidebar_background)",
       "layer0.tint": "var(sidebar_background)",
       "layer0.opacity": 1.0
     },
     {
       "class": "tree_row",
       "parents": [{"class": "tree_row", "attributes": ["selected", "expanded"]}],
+      "background": "var(sidebar_highlight)",
       "layer0.tint": "var(sidebar_highlight)",
       "layer0.opacity": 1.0
     },
