@@ -2,7 +2,7 @@
   "name": "Snazzy",
   "author": "gyndav",
   "original_author": "Sindre Sorhus",
-  "description": "Elegant Sublime Text color scheme with bright colors, based on Sindre Sorhus' iTerm2 Snazzy theme",
+  "description": "Elegant Sublime Text color scheme with bright colors, based on Sindre Sorhus\\' iTerm2 Snazzy theme",
   "homepage": "https://github.com/gyndav/sublime-snazzy",
   "license": "MIT",
   "variables": {
