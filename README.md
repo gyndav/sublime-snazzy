@@ -23,12 +23,15 @@ This port faithfully reproduces the iTerm2 Snazzy color palette in Sublime Text'
 
 ### Manual Installation
 
-1. Download the `Snazzy.sublime-color-scheme` file from this repository
+1. Download both `Snazzy.sublime-color-scheme` and `Snazzy.sublime-theme` files from this repository
 2. Open Sublime Text
 3. Go to Preferences > Browse Packages...
 4. Navigate to the `User` directory
-5. Place the `Snazzy.sublime-color-scheme` file in the `User` directory
+5. Place both files in the `User` directory
 6. Go to Preferences > Color Scheme > User > Snazzy
+7. Go to Preferences > Theme > User > Snazzy
+
+**Note**: For the best experience, use both the color scheme and theme together. The color scheme handles syntax highlighting, while the theme handles the UI (sidebar, tabs, status bar, etc.).
 
 ## Color Palette
 
@@ -82,11 +85,13 @@ This port faithfully reproduces the iTerm2 Snazzy color palette in Sublime Text'
 - **Vibrant colors**: Bright syntax highlighting that's easy to read
 - **Consistent palette**: Uses the exact colors from the original iTerm2 Snazzy theme
 - **Comprehensive coverage**: Syntax rules for all major programming languages
-- **Modern format**: Uses Sublime Text 4's `.sublime-color-scheme` JSON format
+- **Complete UI theming**: Includes both color scheme (syntax) and theme (UI) files
+- **Modern format**: Uses Sublime Text 4's `.sublime-color-scheme` and `.sublime-theme` JSON format
 - **Variables**: Color variables for easy customization
 - **Git integration**: Special colors for git diff markers
 - **Markdown support**: Styled markdown headings, links, and code blocks
 - **HTML/CSS support**: Proper styling for web development
+- **Themed UI elements**: Sidebar, tabs, status bar, buttons, panels, and more
 
 ## Customization
 
@@ -113,6 +118,19 @@ For example, to change the background color:
 - **Sublime Text 4**: Full support
 - **Sublime Text 3**: Full support
 - **Windows/macOS/Linux**: All platforms supported
+
+## Included Files
+
+| File | Description |
+|------|-------------|
+| `Snazzy.sublime-color-scheme` | Main color scheme for syntax highlighting |
+| `Snazzy.sublime-theme` | UI theme for sidebar, tabs, status bar, etc. |
+| `Snazzy.tmTheme` | Legacy XML format for older Sublime Text versions |
+| `README.md` | Documentation and usage instructions |
+| `LICENSE` | MIT License |
+| `.github/workflows/test-color-scheme.yml` | CI workflow for validation |
+| `.editorconfig` | Editor configuration |
+| `.gitignore` | Git ignore patterns |
 
 ## Credits
 
